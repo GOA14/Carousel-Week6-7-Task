@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-main: 'Lora', sans-serif;
+    --color-one: 0, 0, 0;
+    --color-two: 0, 500, 100;
+}
+
+body{
+    background: linear-gradient(
+        to top,
+        rgba(var(--color-one), 1),
+        rgba(var(--color-two), 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, p{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    height: 32rem;
+    width: 40rem;
+    background: linear-gradient(
+        135deg,
+        rgba(var(--color-one), .6),
+        rgba(var(--color-two), .6)
+    );
+    margin: 0 0.5rem;
+    border: 0.04rem solid rgba(var(--color-one),1);
+    border-radius: 0.7rem;
+    padding: 0.4rem;
+    position: absolute;
+    top: 18%;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    background-size: contain;
+}
+
+.slider .slide img{
+    height: 98%;
+    width: 97.6%;
+    border: 0.04rem solid rgba(var(--color-one),1);
+    border-radius: 0.7rem;
+    object-fit: cover;
+}
+
+
+
+.slide-text h1{
+    top: 68%;
+    left: 5%;
+    font-size: 1.5rem;
+    color: rgba(var(--color-two), 1);
+    padding: 0 1rem;
+    border: none;
+    border-bottom: 0.3rem solid rgba(var(--color-one), 1);
+}
+
+.slide-text p{
+    top: 75%;
+    left: 5%;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: rgba(var(--color-text), 0.8);
+}
+
+button{
+    position: absolute;
+    z-index: 5;
+    top: 55%;
+    padding: 0.6rem;
+    background: rgba(var(--color-one), .5);
+    border: none;
+    color: rgba(var(--color-two), 1);
+    display: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+#prev{
+    left: 28%;
+}
+
+#next{
+    left: 70%;
+}
+
+.wrapper img{
+    height: 30rem;
+    position: absolute;
+}
+
+.wrapper #left{
+    left: -3rem;
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.wrapper #right{
+    right: -3rem;
+}

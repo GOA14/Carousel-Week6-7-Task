@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="slide-text">
+            <h1>Places In Lagos State</h1>
+            <p>Center of Excellence</p>
+        </div>
+
+        <div class="slider">
+            <button id="prev" class="prev" type="button" onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+
+            <div class="slide image-item-1">
+                <img src="./images/Lagos1.jpg" class="image" alt="" data-index="1">
+                
+            </div>
+
+            <div class="slide image-item-2">
+                <img src="./images/lagos2.jpg" class="image" alt="" data-index="2">
+            </div>
+
+            <div class="slide image-item-3">
+                <img src="./images/lagos3.jpg" class="image" alt="" data-index="3">
+            </div>
+
+            <div class="slide image-item-4">
+                <img src="./images/lagos4.jpg" class="image" alt="" data-index="4">
+            </div>
+
+            <div class="slide image-item-5">
+                <img src="./images/lagos5.jpg" class="image" alt="" data-index="5">
+            </div>
+
+            <div class="slide image-item-6">
+                <img src="./images/lagos6.jpg" class="image" alt="" data-index="6">
+            </div>
+
+            <button id="next" class="next" type="button" onclick="plusDivs(1)"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+    </div>
+
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
